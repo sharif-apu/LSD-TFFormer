@@ -1,9 +1,9 @@
-# Illuminating Darkness: Enhancing Real-world Low-light Scenes with Smartphone Images
+# [WACV 2026] Illuminating Darkness: Learning to Enhance Low-light Images In-the-Wild
 
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/illuminating-darkness-enhancing-real-world/low-light-image-enhancement-on-lolv2)](https://paperswithcode.com/sota/low-light-image-enhancement-on-lolv2?p=illuminating-darkness-enhancing-real-world)
+[![ArXiv](https://img.shields.io/badge/LSD--TFFormer-ArXiv-red.svg)](https://arxiv.org/abs/2503.06898)
 
 ## Description
-This is the official repository for our paper titled "Illuminating Darkness: Enhancing Real-world Low-light Scenes with Smartphone Images".
+This is the official repository for our paper titled "Illuminating Darkness: Learning to Enhance Low-light Images In-the-Wild".
 Code and Dataset will be released once our paper is published.
 
 ## Abstract
@@ -23,8 +23,10 @@ Code and Dataset will be released once our paper is published.
 [Sample results and visualizations will be added after publication]
 
 ## Dataset
-Link to download: https://drive.google.com/drive/folders/1QPT6vbRlA-47N0xNElmVYYR6hx9hGZiw?usp=sharing. Details will be provided upon publication
-
+<!-- Link to download: https://drive.google.com/drive/folders/1QPT6vbRlA-47N0xNElmVYYR6hx9hGZiw?usp=sharing.  -->
+```bash
+# Details will be provided upon publication
+```
 
 ## Citation
 If you use our code or dataset in your research, please cite our paper:
