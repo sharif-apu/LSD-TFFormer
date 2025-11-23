@@ -1,0 +1,11 @@
+/lsd
+/lsd1
+/lsd_small
+/lsd_small1
+/lsd_test
+
+/.vscode
+/modelLog
+
+*/__pycache__
+*.pyc
