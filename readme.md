@@ -129,9 +129,13 @@ You can cite our preprint as:
 ---
 
 ## **License**
-License details will be added after publication.
 
----
+### Code License
+The code in this repository is licensed under the **MIT License**. See [LICENSE](LICENSE) for details.
+
+### Dataset License
+The **Low-Light Smartphone Dataset (LSD)** is licensed under **Creative Commons Attribution 4.0 International (CC BY 4.0)**. See [DATA_LICENSE](DATA_LICENSE) for details.
+
 
 ## **Contact**
 For any further query, feel free to contact us through the following emails: apuism@gmail.com, abdurehman458@gmail.com
