@@ -8,11 +8,11 @@ This is the official repository for our paper titled "Illuminating Darkness: Lea
 
 ## Abstract
 Single-shot low-light image enhancement (SLLIE) remains
-challenging due to the limited availability of diverse, realworld paired datasets. To bridge this gap, we introduce
+challenging due to the limited availability of diverse, real-world paired datasets. To bridge this gap, we introduce
 the Low-Light Smartphone Dataset (LSD), a large-scale,
 high-resolution (4K+) dataset collected in the wild across
 a wide range of challenging lighting conditions (0.1–200
-lux). LSD contains 6,425 precisely aligned low and normallight image pairs, selected from over 8,000 dynamic indoor and outdoor scenes through multi-frame acquisition
+lux). LSD contains 6,425 precisely aligned low and normal light image pairs, selected from over 8,000 dynamic indoor and outdoor scenes through multi-frame acquisition
 and expert evaluation. To evaluate generalization and aesthetic quality, we collect 2,117 unpaired low-light images
 from previously unseen devices. To fully exploit LSD, we
 propose TFFormer, a hybrid model that encodes luminance
@@ -136,8 +136,10 @@ The code in this repository is licensed under the **MIT License**. See [LICENSE]
 ### Dataset License
 The **Low-Light Smartphone Dataset (LSD)** is licensed under **Creative Commons Attribution 4.0 International (CC BY 4.0)**. See [DATA_LICENSE](DATA_LICENSE) for details.
 
+## **Notes from Author**
+This work is self-motivated research supported by the authors' personal funding, with all rights reserved to the authors. We believe that research should be free and that everyone has the right to pursue it. Therefore, we have published all our code and the Low-Light Smartphone Dataset (LSD). Notably, it took over 2 years to collect all these real-world samples, driven by personal interest and dedication. You are welcome to use our code and dataset for your research and give suggestions to improve real-world LLIE. However, please note that the LSD dataset is intended for non-commercial research purposes only. If you use our work, please cite our paper.
 
 ## **Contact**
-For any further query, feel free to contact us through the following emails: apuism@gmail.com, abdurehman458@gmail.com
+For any further queries, feel free to contact us through the following emails: apuism@gmail.com, abdurehman458@gmail.com
 
-**Acknowledgment:** This code is based on the [BDJJ](https://github.com/sharif-apu/BJDD_CVPR21) and  [RetinexFormer](https://github.com/caiyuanhao1998/Retinexformer) repository. 
+**Acknowledgment:** This code is based on the [BJDD](https://github.com/sharif-apu/BJDD_CVPR21) and  [RetinexFormer](https://github.com/caiyuanhao1998/Retinexformer) repository. 
