@@ -137,7 +137,7 @@ The code in this repository is licensed under the **MIT License**. See [LICENSE]
 The **Low-Light Smartphone Dataset (LSD)** is licensed under **Creative Commons Attribution 4.0 International (CC BY 4.0)**. See [DATA_LICENSE](DATA_LICENSE) for details.
 
 ## **Notes from Author**
-This work is self-motivated research supported by the authors' personal funding, with all rights reserved to the authors. We believe that research should be free and that everyone has the right to pursue it. Therefore, we have published all our code and the Low-Light Smartphone Dataset (LSD). Notably, it took over 2 years to collect all these real-world samples, driven by personal interest and dedication. You are welcome to use our code and dataset for your research and give suggestions to improve real-world LLIE. However, please note that the LSD dataset is intended for non-commercial research purposes only. If you use our work, please cite our paper.
+This work is self-motivated research. We believe that research should be free and that everyone has the right to pursue it. Therefore, we have published all our code and the Low-Light Smartphone Dataset (LSD). Notably, it took over 2 years to collect all these real-world samples, driven by personal interest and dedication. You are welcome to use our code and dataset for your research and give suggestions to improve real-world LLIE. However, please note that the LSD dataset is intended for non-commercial research purposes only. If you use our work, please cite our paper.
 
 ## **Contact**
 For any further queries, feel free to contact us through the following emails: apuism@gmail.com, abdurehman458@gmail.com
