@@ -2,6 +2,12 @@
 
 [![ArXiv](https://img.shields.io/badge/LSD--TFFormer-ArXiv-red.svg)](https://arxiv.org/abs/2503.06898)
 
+## 📢 News
+- **[Jan 2026]** We are hosting the **NTIRE 2026 Challenge on Single-Shot Low Light Image Enhancement** at CVPR 2026! 
+  - 🏆 **Track 1**: [Low Light Image Enhancement (In-the-wild)](https://www.codabench.org/competitions/11864/)
+  - 🏆 **Track 2**: [Joint Denoising & Low Light Enhancement](https://www.codabench.org/competitions/12994/)
+  - 🔗 [NTIRE 2026 Website](https://cvlai.net/ntire/2026/)
+
 ## Description
 This is the official repository for our paper titled "Illuminating Darkness: Learning to Enhance Low-light Images In-the-Wild".
 
