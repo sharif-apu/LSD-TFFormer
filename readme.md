@@ -1,6 +1,7 @@
 # [WACV 2026] Illuminating Darkness: Learning to Enhance Low-light Images In-the-Wild
 
 [![ArXiv](https://img.shields.io/badge/LSD--TFFormer-ArXiv-red.svg)](https://arxiv.org/abs/2503.06898)
+[![WACV Presentation](https://img.shields.io/badge/WACV-Presentation%20Video-blue.svg)](https://www.youtube.com/watch?v=3GQWxt8QlwE&t=2s)
 
 ## 📢 News
 - **[Jan 2026]** We are hosting the **NTIRE 2026 Challenge on Single-Shot Low Light Image Enhancement** at CVPR 2026! 
@@ -57,7 +58,9 @@ pip install -r requirements.txt
 ## **Dataset: Low-light Smartphone Dataset (LSD)**
 We introduce **LSD**, the largest in-the-wild Single-Shot Low-Light Image Enhancement (SLLIE) dataset to date.
 
-📥 **Download Dataset:** [Link](https://drive.google.com/drive/folders/1QPT6vbRlA-47N0xNElmVYYR6hx9hGZiw?usp=sharing)
+📥 **Download Dataset:** 
+- [Google Drive](https://drive.google.com/drive/folders/1QPT6vbRlA-47N0xNElmVYYR6hx9hGZiw?usp=sharing)
+- [Hugging Face](https://huggingface.co/datasets/ARM4588/Lowlight-Smartphone-Dataset)
 
 
 Dataset directory structure:
