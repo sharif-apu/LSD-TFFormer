@@ -2,9 +2,10 @@
 
 [![ArXiv](https://img.shields.io/badge/LSD--TFFormer-ArXiv-red.svg)](https://arxiv.org/abs/2503.06898)
 [![WACV Presentation](https://img.shields.io/badge/WACV-Presentation%20Video-blue.svg)](https://www.youtube.com/watch?v=3GQWxt8QlwE&t=2s)
+[![WACV Poster](https://img.shields.io/badge/WACV-Poster%20PDF-green.svg)](assets/poster_wacv.pdf)
 
 ## 📢 News
-- **[Jan 2026]** We are hosting the **NTIRE 2026 Challenge on Single-Shot Low Light Image Enhancement** at CVPR 2026! 
+- **[Jan 2026]** We are hosting the **NTIRE 2026 Challenge on Single-Shot Low Light Image Enhancement** using our LSD at **CVPR 2026**! 
   - 🏆 **Track 1**: [Low Light Image Enhancement (In-the-wild)](https://www.codabench.org/competitions/11864/)
   - 🏆 **Track 2**: [Joint Denoising & Low Light Enhancement](https://www.codabench.org/competitions/12994/)
   - 🔗 [NTIRE 2026 Website](https://cvlai.net/ntire/2026/)
@@ -28,6 +29,10 @@ entanglement. We further propose a cross-attention-driven
 joint decoder for context-aware fusion of LC representations, along with LC refinement and LC-guided supervision to significantly enhance perceptual fidelity and structural consistency. TFFormer achieves state-of-the-art results on LSD (+2.45 dB PSNR) and substantially improves
 downstream vision tasks, such as low-light object detection
 (+6.80 mAP on ExDark).
+
+<p align="center">
+  <img src="assets/poster_wacv.png" width="85%">
+</p>
 
 ## **Installation**
 ```bash
@@ -125,7 +130,7 @@ Sample results and visualizations will be uploaded after publication.
 ---
 
 ## **Citation**
-You can cite our preprint as:
+You can cite our paper as:
 
 ```bibtex
 @inproceedings{sharif2026illuminating,
