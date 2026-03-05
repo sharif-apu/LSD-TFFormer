@@ -128,11 +128,12 @@ Sample results and visualizations will be uploaded after publication.
 You can cite our preprint as:
 
 ```bibtex
-@article{sharif2025illuminating,
-  title={Illuminating darkness: Enhancing real-world low-light scenes with smartphone images},
-  author={Sharif, SMA and Rehman, Abdur and Abidin, Zain Ul and Naqvi, Rizwan Ali and Dharejo, Fayaz Ali and Timofte, Radu},
-  journal={arXiv preprint arXiv:2503.06898},
-  year={2025}
+@inproceedings{sharif2026illuminating,
+  title={Illuminating Darkness: Learning to Enhance Low-light Images In-the-Wild},
+  author={Sharif, SMA and Rehman, Abdur and Abidin, Zain Ul and Dharejo, Fayaz Ali and Timofte, Radu and Naqvi, Rizwan Ali},
+  booktitle={Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision},
+  pages={2263--2272},
+  year={2026}
 }
 ```
 ---
