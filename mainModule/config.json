@@ -1,7 +1,7 @@
 {
     "gtPath": "./lsd/gtPatch/",
     "targetPath": "./lsd/inputPatch/",
-    "checkpointPath": "./modelLog/LowLightENhancement/checkpoint_TFFormer/",
+    "checkpointPath": "/home/sharif/MEGA/LSD-TFFormer/",
     "testImagePath": "./lsd_test/",
     "resultDir": "./modelLog/logDir_TFFormer/ModelOutput/",
     "logPath": "./modelLog/logDir_TFFormer/",
