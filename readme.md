@@ -9,6 +9,7 @@
   - 🏆 **Track 1**: [Low Light Image Enhancement (In-the-wild)](https://www.codabench.org/competitions/11864/)
   - 🏆 **Track 2**: [Joint Denoising & Low Light Enhancement](https://www.codabench.org/competitions/12994/)
   - 🔗 [NTIRE 2026 Website](https://cvlai.net/ntire/2026/)
+- **[Jan 2026]** We released the checkpoint and fixed the broken LSD-U unpair testing set. Feel free to use them!
 
 ## Description
 This is the official repository for our paper titled "Illuminating Darkness: Learning to Enhance Low-light Images In-the-Wild".
