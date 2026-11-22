@@ -87,6 +87,10 @@ Approved entries appear on the [leaderboard](https://lsd-website.apuism.workers.
 
 ## TFFormer
 
+**TFFormer** is a luminance–chrominance (LC) decoupled Transformer for low-light enhancement. It splits the input into luminance and chrominance, encodes each with attention, fuses them with LC cross-attention, decodes an intermediate image, and refines it with an LC-guided reconstruction block (LCGRB). Keeping structure (luminance) and color (chrominance) separate reduces noise while avoiding over-brightening and color shifts.
+
+<p align="center"><img src="assets/tfformer_arch.jpg" width="100%" alt="TFFormer architecture: luminance and chrominance mapping, separate encoders, LC cross-attention, joint decoder and LC-guided refinement block"></p>
+
 ### Installation
 
 Tested with Python 3.10, PyTorch 2.5 and CUDA 12 on Linux. The pinned `nvidia-*` and `triton` packages are Linux/CUDA only.
@@ -129,9 +133,13 @@ Checkpoints and enhanced images are written to `modelLog/`.
 
 ### Results
 
+<p align="center"><img src="assets/tfformer_qualitative.jpg" width="100%" alt="Qualitative comparison on LSD: input, Retinexformer, Diff-Retinex, HVI, TFFormer and ground truth on a DLL outdoor and an NLL indoor scene"></p>
+
+TFFormer recovers cleaner text and texture and more faithful color than recent methods, on both the DLL (enhancement) and NLL (joint denoising) tracks.
+
 <p align="center"><img src="assets/lsd_results.png" width="95%" alt="Quantitative comparison on LSD"></p>
 
-Best and second-best results are shown in red and blue.
+Quantitative results on the public LSD test set. Best and second-best results are shown in red and blue. A sortable version is on the [website leaderboard](https://lsd-website.apuism.workers.dev/#leaderboard) (choose *Paper · public 400*).
 
 ## Citation
 
