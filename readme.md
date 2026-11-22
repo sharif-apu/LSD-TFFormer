@@ -5,8 +5,9 @@
 ### Illuminating Darkness: Learning to Enhance Low-light Images In-the-Wild
 **WACV 2026**
 
-[**Paper**](https://arxiv.org/abs/2503.06898) · [**Dataset**](https://huggingface.co/datasets/ARM4588/Lowlight-Smartphone-Dataset) · [**Results**](#results) · [**Talk**](https://www.youtube.com/watch?v=3GQWxt8QlwE) · [**Poster**](assets/poster_wacv.pdf)
+[**Website**](https://lsd-website.apuism.workers.dev) · [**Paper**](https://arxiv.org/abs/2503.06898) · [**Dataset**](https://huggingface.co/datasets/ARM4588/Lowlight-Smartphone-Dataset) · [**Results**](#results) · [**Talk**](https://www.youtube.com/watch?v=3GQWxt8QlwE) · [**Poster**](assets/poster_wacv.pdf)
 
+[![Website](https://img.shields.io/badge/Website-LSD-0b7285.svg)](https://lsd-website.apuism.workers.dev)
 [![arXiv](https://img.shields.io/badge/arXiv-2503.06898-b31b1b.svg)](https://arxiv.org/abs/2503.06898)
 [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Dataset-LSD-yellow.svg)](https://huggingface.co/datasets/ARM4588/Lowlight-Smartphone-Dataset)
 [![Data license](https://img.shields.io/badge/data-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
@@ -19,7 +20,8 @@
 **LSD** is the largest real-world paired dataset for single-shot low-light image enhancement: **6,425 aligned low/normal-light pairs** captured in the wild on **15 smartphone sensors**, from **0.1 to 200 lux**, plus **LSD-U**, **2,117 unpaired images** from unseen devices for testing generalization. This repository also contains **TFFormer**, our luminance–chrominance decoupled enhancement model.
 
 ## News
-- **[Coming Soom]** We are launching LSD benchmarking. Details coming soon.
+
+- **[Coming Soon]** We are launching the LSD benchmark. Follow the [website](https://lsd-website.apuism.workers.dev) for details.
 - **[Coming Soon]** We are organizing the **NTIRE 2027** low-light enhancement challenge on LSD at CVPR 2027. Details coming soon.
 - **[Nov 2026]** TFFormer checkpoint released and the LSD-U unpaired test set fixed.
 - **[Jan 2026]** LSD was the official dataset of the **NTIRE 2026 Single-Shot Low-Light Enhancement Challenge** at CVPR 2026: [Track 1 (in-the-wild)](https://www.codabench.org/competitions/11864/), [Track 2 (joint denoising)](https://www.codabench.org/competitions/12994/), [NTIRE 2026](https://cvlai.net/ntire/2026/).
@@ -69,7 +71,7 @@ LSD/
 
 ## Benchmark
 
-An open LSD benchmark is coming: submit your enhanced results and get scored on hidden ground truth with the same evaluation script for everyone. Until it launches, see the [results](#results) from the paper below.
+An open LSD benchmark is coming: submit your enhanced results and get scored on hidden ground truth with the same evaluation script for everyone. Until it launches, see the [results](#results) from the paper below, or browse samples and the paper leaderboard on the [website](https://lsd-website.apuism.workers.dev).
 
 ## TFFormer
 
