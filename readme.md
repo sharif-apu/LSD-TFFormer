@@ -19,8 +19,8 @@
 **LSD** is the largest real-world paired dataset for single-shot low-light image enhancement: **6,425 aligned low/normal-light pairs** captured in the wild on **15 smartphone sensors**, from **0.1 to 200 lux**, plus **LSD-U**, **2,117 unpaired images** from unseen devices for testing generalization. This repository also contains **TFFormer**, our luminance–chrominance decoupled enhancement model.
 
 ## News
-
-- **[Planned]** We are organizing the **NTIRE 2027** low-light enhancement challenge on LSD at CVPR 2027. Details coming soon.
+- **[Coming Soom]** We are launching LSD benchmarking. Details coming soon.
+- **[Coming Soon]** We are organizing the **NTIRE 2027** low-light enhancement challenge on LSD at CVPR 2027. Details coming soon.
 - **[Nov 2026]** TFFormer checkpoint released and the LSD-U unpaired test set fixed.
 - **[Jan 2026]** LSD was the official dataset of the **NTIRE 2026 Single-Shot Low-Light Enhancement Challenge** at CVPR 2026: [Track 1 (in-the-wild)](https://www.codabench.org/competitions/11864/), [Track 2 (joint denoising)](https://www.codabench.org/competitions/12994/), [NTIRE 2026](https://cvlai.net/ntire/2026/).
 - **[Jan 2026]** Dataset mirrored on [Hugging Face](https://huggingface.co/datasets/ARM4588/Lowlight-Smartphone-Dataset).
