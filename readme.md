@@ -21,7 +21,8 @@
 
 ## News
 
-- **[Coming Soon]** We are launching the LSD benchmark. Follow the [website](https://lsd-website.apuism.workers.dev) for details.
+- **[Nov 2026]** 🚀 **LSD benchmark and leaderboard launched.** Download the test inputs ([DLL](https://drive.google.com/file/d/1juir8fqQZQpbsDPlmyc_PKvUKvvVCwc3/view?usp=sharing) · [NLL](https://drive.google.com/file/d/1Oiacna8WCq8Qa1deKRcY84YLFBcVD7RW/view?usp=sharing), 25 scenes per track), submit your results on the [website](https://lsd-website.apuism.workers.dev/#submit), and get scored on hidden ground truth. See the [leaderboard](https://lsd-website.apuism.workers.dev/#leaderboard).
+- **[Nov 2026]** 🌐 **New [LSD website](https://lsd-website.apuism.workers.dev)**: samples, LSD-U, paper results, the benchmark and news in one place.
 - **[Coming Soon]** We are organizing the **NTIRE 2027** low-light enhancement challenge on LSD at CVPR 2027. Details coming soon.
 - **[Nov 2026]** TFFormer checkpoint released and the LSD-U unpaired test set fixed.
 - **[Jan 2026]** LSD was the official dataset of the **NTIRE 2026 Single-Shot Low-Light Enhancement Challenge** at CVPR 2026: [Track 1 (in-the-wild)](https://www.codabench.org/competitions/11864/), [Track 2 (joint denoising)](https://www.codabench.org/competitions/12994/), [NTIRE 2026](https://cvlai.net/ntire/2026/).
@@ -71,7 +72,18 @@ LSD/
 
 ## Benchmark
 
-An open LSD benchmark is coming: submit your enhanced results and get scored on hidden ground truth with the same evaluation script for everyone. Until it launches, see the [results](#results) from the paper below, or browse samples and the paper leaderboard on the [website](https://lsd-website.apuism.workers.dev).
+Submit your enhanced results and get scored on **hidden ground truth** with the same evaluation script for everyone. Two tracks, 25 test scenes each:
+
+| Track | Task | Test inputs |
+|---|---|---|
+| **DLL** | low-light enhancement | [Download](https://drive.google.com/file/d/1juir8fqQZQpbsDPlmyc_PKvUKvvVCwc3/view?usp=sharing) (`DLL_001.jpg` … `DLL_025.jpg`, 135 MB) |
+| **NLL** | joint denoising and enhancement | [Download](https://drive.google.com/file/d/1Oiacna8WCq8Qa1deKRcY84YLFBcVD7RW/view?usp=sharing) (`NLL_001.jpg` … `NLL_025.jpg`, 217 MB) |
+
+1. Enhance every input of a track at full resolution.
+2. Save each result as PNG with the same name (`DLL_001.png` …) and zip them.
+3. Register and upload on the [Submit page](https://lsd-website.apuism.workers.dev/#submit). Scores: PSNR, SSIM and LPIPS.
+
+Approved entries appear on the [leaderboard](https://lsd-website.apuism.workers.dev/#leaderboard). For the paper's results on the public 400-pair test set, see [Results](#results).
 
 ## TFFormer
 
