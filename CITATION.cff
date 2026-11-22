@@ -1,0 +1,59 @@
+cff-version: 1.2.0
+message: "If you use LSD or TFFormer, please cite the paper below."
+title: "LSD: Low-light Smartphone Dataset and TFFormer"
+type: software
+repository-code: "https://github.com/sharif-apu/LSD-TFFormer"
+url: "https://lsd-website.apuism.workers.dev"
+license: MIT
+keywords:
+  - low-light image enhancement
+  - dataset
+  - benchmark
+  - image denoising
+  - computer vision
+authors:
+  - given-names: S M A
+    family-names: Sharif
+    affiliation: Opt-AI Inc.
+  - given-names: Abdur
+    family-names: Rehman
+    affiliation: Opt-AI Inc.
+  - given-names: Zain Ul
+    family-names: Abidin
+    affiliation: Sejong University
+  - given-names: Fayaz Ali
+    family-names: Dharejo
+    affiliation: University of Würzburg
+  - given-names: Radu
+    family-names: Timofte
+    affiliation: University of Würzburg
+  - given-names: Rizwan Ali
+    family-names: Naqvi
+    affiliation: Sejong University
+preferred-citation:
+  type: conference-paper
+  title: "Illuminating Darkness: Learning to Enhance Low-light Images In-the-Wild"
+  authors:
+    - given-names: S M A
+      family-names: Sharif
+    - given-names: Abdur
+      family-names: Rehman
+    - given-names: Zain Ul
+      family-names: Abidin
+    - given-names: Fayaz Ali
+      family-names: Dharejo
+    - given-names: Radu
+      family-names: Timofte
+    - given-names: Rizwan Ali
+      family-names: Naqvi
+  collection-title: "Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)"
+  conference:
+    name: "WACV 2026"
+  year: 2026
+  start: 2263
+  end: 2272
+  url: "https://arxiv.org/abs/2503.06898"
+  identifiers:
+    - type: other
+      value: "arXiv:2503.06898"
+      description: arXiv preprint
