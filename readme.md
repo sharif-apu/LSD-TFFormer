@@ -144,7 +144,7 @@ Quantitative benchmark on the LSD dataset, as reported in the paper. The best an
 
 ## Support LSD
 
-LSD is **entirely self-funded**. Over two years of data collection, storage, hosting and the benchmark server have all been paid by the authors themselves. The data, code and benchmark stay free for research. If LSD is useful to you or your company, please help keep it running:
+LSD was built over two years with the authors' own resources, and we still pay for storage, hosting and the benchmark server ourselves. We gratefully acknowledge the Alexander von Humboldt Foundation for partial support of the WACV 2026 conference registration. The data, code and benchmark stay free for research. If LSD is useful to you or your company, please help keep it running:
 
 - **Sponsor on GitHub.** Monthly or one-time, any amount: **[github.com/sponsors/sharif-apu](https://github.com/sponsors/sharif-apu)**.
 - **Commercial license.** The dataset is CC BY-NC 4.0. To use LSD or TFFormer in a product, email [apuism@gmail.com](mailto:apuism@gmail.com?subject=LSD%20commercial%20license).
@@ -170,7 +170,7 @@ LSD is **entirely self-funded**. Over two years of data collection, storage, hos
 
 ## About
 
-LSD took over two years to collect and is self-funded research. We release the data and code openly because we believe research should be accessible to everyone. If LSD or TFFormer helps your work, please cite the paper and consider [supporting LSD](#support-lsd).
+LSD was built over two years with the authors' own resources: data collection, storage, hosting and the benchmark server are paid for by the team. We gratefully acknowledge the Alexander von Humboldt Foundation for partial support of the WACV 2026 conference registration. We release the data and code openly because we believe research should be accessible to everyone. If LSD or TFFormer helps your work, please cite the paper and consider [supporting LSD](#support-lsd).
 
 **Authors:** S M A Sharif¹, Abdur Rehman¹, Zain Ul Abidin², Fayaz Ali Dharejo³, Radu Timofte³, Rizwan Ali Naqvi²
 ¹Opt-AI Inc. · ²Sejong University · ³University of Würzburg
