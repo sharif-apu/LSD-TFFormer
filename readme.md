@@ -1,167 +1,148 @@
-# [WACV 2026] Illuminating Darkness: Learning to Enhance Low-light Images In-the-Wild
+<div align="center">
 
-[![ArXiv](https://img.shields.io/badge/LSD--TFFormer-ArXiv-red.svg)](https://arxiv.org/abs/2503.06898)
-[![WACV Presentation](https://img.shields.io/badge/WACV-Presentation%20Video-blue.svg)](https://www.youtube.com/watch?v=3GQWxt8QlwE&t=2s)
-[![WACV Poster](https://img.shields.io/badge/WACV-Poster%20PDF-green.svg)](assets/poster_wacv.pdf)
+# LSD: Low-light Smartphone Dataset
 
-## 📢 News
-- **[Jan 2026]** We are hosting the **NTIRE 2026 Challenge on Single-Shot Low Light Image Enhancement** using our LSD at **CVPR 2026**! 
-  - 🏆 **Track 1**: [Low Light Image Enhancement (In-the-wild)](https://www.codabench.org/competitions/11864/)
-  - 🏆 **Track 2**: [Joint Denoising & Low Light Enhancement](https://www.codabench.org/competitions/12994/)
-  - 🔗 [NTIRE 2026 Website](https://cvlai.net/ntire/2026/)
- 
-## 📢 Update
-- **[Dec 2026]** We released the checkpoint and fixed the broken LSD-U unpair testing set. Feel free to use them!
+### Illuminating Darkness: Learning to Enhance Low-light Images In-the-Wild
+**WACV 2026**
 
-## Description
-This is the official repository for our paper titled "Illuminating Darkness: Learning to Enhance Low-light Images In-the-Wild".
+[**Paper**](https://arxiv.org/abs/2503.06898) · [**Dataset**](https://huggingface.co/datasets/ARM4588/Lowlight-Smartphone-Dataset) · [**Results**](#results) · [**Talk**](https://www.youtube.com/watch?v=3GQWxt8QlwE) · [**Poster**](assets/poster_wacv.pdf)
 
+[![arXiv](https://img.shields.io/badge/arXiv-2503.06898-b31b1b.svg)](https://arxiv.org/abs/2503.06898)
+[![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Dataset-LSD-yellow.svg)](https://huggingface.co/datasets/ARM4588/Lowlight-Smartphone-Dataset)
+[![Data license](https://img.shields.io/badge/data-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
+[![Code license](https://img.shields.io/badge/code-MIT-blue.svg)](#license)
 
-## Abstract
-Single-shot low-light image enhancement (SLLIE) remains
-challenging due to the limited availability of diverse, real-world paired datasets. To bridge this gap, we introduce
-the Low-Light Smartphone Dataset (LSD), a large-scale,
-high-resolution (4K+) dataset collected in the wild across
-a wide range of challenging lighting conditions (0.1–200
-lux). LSD contains 6,425 precisely aligned low and normal light image pairs, selected from over 8,000 dynamic indoor and outdoor scenes through multi-frame acquisition
-and expert evaluation. To evaluate generalization and aesthetic quality, we collect 2,117 unpaired low-light images
-from previously unseen devices. To fully exploit LSD, we
-propose TFFormer, a hybrid model that encodes luminance
-and chrominance (LC) separately to reduce color-structure
-entanglement. We further propose a cross-attention-driven
-joint decoder for context-aware fusion of LC representations, along with LC refinement and LC-guided supervision to significantly enhance perceptual fidelity and structural consistency. TFFormer achieves state-of-the-art results on LSD (+2.45 dB PSNR) and substantially improves
-downstream vision tasks, such as low-light object detection
-(+6.80 mAP on ExDark).
+<img src="assets/lsd_teaser.jpg" width="90%" alt="LSD pairs: low-light smartphone input next to its aligned ground truth, outdoor and indoor">
 
-<p align="center">
-  <img src="assets/poster_wacv.png" width="85%">
-</p>
+</div>
 
-## **Installation**
+**LSD** is the largest real-world paired dataset for single-shot low-light image enhancement: **6,425 aligned low/normal-light pairs** captured in the wild on **15 smartphone sensors**, from **0.1 to 200 lux**, plus **LSD-U**, **2,117 unpaired images** from unseen devices for testing generalization. This repository also contains **TFFormer**, our luminance–chrominance decoupled enhancement model.
+
+## News
+
+- **[Planned]** We are organizing the **NTIRE 2027** low-light enhancement challenge on LSD at CVPR 2027. Details coming soon.
+- **[Nov 2026]** TFFormer checkpoint released and the LSD-U unpaired test set fixed.
+- **[Jan 2026]** LSD was the official dataset of the **NTIRE 2026 Single-Shot Low-Light Enhancement Challenge** at CVPR 2026: [Track 1 (in-the-wild)](https://www.codabench.org/competitions/11864/), [Track 2 (joint denoising)](https://www.codabench.org/competitions/12994/), [NTIRE 2026](https://cvlai.net/ntire/2026/).
+- **[Jan 2026]** Dataset mirrored on [Hugging Face](https://huggingface.co/datasets/ARM4588/Lowlight-Smartphone-Dataset).
+
+## The dataset
+
+| | LSD (paired) | LSD-U (unpaired) |
+|---|---|---|
+| Images | 6,425 pairs (6,025 train · 400 test) | 2,117 |
+| Sources | 15 smartphone sensors | Video frames 1,217 · DSLR 300 · Android 300 · iPhone 250 · social media 50 |
+| Illuminance | 0.1–200 lux, ISO 50–3200 | mixed |
+| Resolution | 4K+ full scenes, ~180K training patches | mixed |
+| Use | training and full-reference benchmarking | generalization and perceptual evaluation |
+
+Paired data comes in two variants:
+
+- **DLL** (denoised low-light, 3,175 pairs): for low-light enhancement.
+- **NLL** (noisy low-light, 3,250 pairs): for joint denoising and enhancement.
+
+**Compared with existing paired datasets**
+
+| Dataset | Sensors | Resolution | Full scene | Pairs |
+|---|:-:|:-:|:-:|--:|
+| LOL-V1 | 1 | 400×600 | ✗ | 500 |
+| LOL-V2 | 1 | 400×600 | ✗ | 789 |
+| LSRW | 2 | 960×720 | ✗ | 5,650 |
+| NCLLIE | 1 | 4K+ | ✓ | 225 |
+| **LSD** | **15** | **4K+** | ✓ | **6,425** |
+
+### Download
+
+| Source | Contents |
+|---|---|
+| [Hugging Face](https://huggingface.co/datasets/ARM4588/Lowlight-Smartphone-Dataset) | Training patches: `patch_DLL_{input,gt}Patch.tar.gz`, `patch_NLL_{input,gt}Patch.tar.gz` (166 GB total) |
+| [Google Drive](https://drive.google.com/drive/folders/1QPT6vbRlA-47N0xNElmVYYR6hx9hGZiw?usp=sharing) | Full scenes, 400-pair test set, LSD-U |
+
+```
+LSD/
+├── training/
+│   ├── full_scenes/
+│   └── patches/
+│       ├── inputPatchDLL/   gtPatchDLL/
+│       └── inputPatchNLL/   gtPatchNLL/
+└── testing/
+```
+
+## Benchmark
+
+An open LSD benchmark is coming: submit your enhanced results and get scored on hidden ground truth with the same evaluation script for everyone. Until it launches, see the [results](#results) from the paper below.
+
+## TFFormer
+
+### Installation
+
+Tested with Python 3.10, PyTorch 2.5 and CUDA 12 on Linux. The pinned `nvidia-*` and `triton` packages are Linux/CUDA only.
+
 ```bash
-
-# 1. Clone the repository
-git clone <repo_link>
-cd <repo_folder>
-
-# 2. Create and activate a virtual environment (Python 3.10 recommended)
-
-# Create venv
-python -m venv .venv
-
-# Activate (Linux/macOS)
-source .venv/bin/activate
-
-# 3. Install dependencies
+git clone https://github.com/sharif-apu/LSD-TFFormer.git
+cd LSD-TFFormer
+python -m venv .venv && source .venv/bin/activate
 pip install --upgrade pip
-pip install -r requirements.txt
-
-# 4. Download the dataset
-# Refer to the "Dataset" section for download links and directory structure.
-
+pip install -r requirement.txt
 ```
 
----
+### Configuration
 
-## **Dataset: Low-light Smartphone Dataset (LSD)**
-We introduce **LSD**, the largest in-the-wild Single-Shot Low-Light Image Enhancement (SLLIE) dataset to date.
+Set your paths in `mainModule/config.json`:
 
-📥 **Download Dataset:** 
-- [Google Drive](https://drive.google.com/drive/folders/1QPT6vbRlA-47N0xNElmVYYR6hx9hGZiw?usp=sharing)
-- [Hugging Face](https://huggingface.co/datasets/ARM4588/Lowlight-Smartphone-Dataset)
-
-
-Dataset directory structure:
-```
-testing
-
-training
-    full_scenes/
-    patches/
-        ├── inputPatchDLL/
-        ├── gtPatchDLL/
-        ├── inputPatchNLL/
-        └── gtPatchNLL/
-```
-
-### **Terminology**
-- **DLL — Denoised Low-Light:** for low-light enhancement training  
-- **NLL — Noisy Low-Light:** for joint denoising + enhancement training  
-
-
----
-
-## **Usage**
-Update your dataset paths in `mainModule/config.json`:
-```python
-"gtPath": "./lsd/gtPatch/",         # path to groundtruth patches
-"targetPath": "./lsd/inputPatch/",  # path to input patches
-"testImagePath": "./lsd_test/"      # path to test set contining gtPatch & inputPatch folders
-```
-
-📥 **Download Checkpoint:** 
-- [Google Drive](https://drive.google.com/drive/folders/1Y9wOSCVOTao2QoyyKu2lXw83bXVzr3Vk?usp=sharing)
-
-
-### **Train from scratch**
-```bash
-python main.py -ts
-```
-
-### **Transfer learning / Resume training**
-Update `mainModule/config.json` to point to your checkpoint for example:
 ```json
+"gtPath": "./lsd/gtPatch/",
+"targetPath": "./lsd/inputPatch/",
+"testImagePath": "./lsd_test/",
 "checkpointPath": "./modelLog/LowLightEnhancement/checkpoint_TFFormer/"
 ```
 
-Then run:
+`testImagePath` should contain the `gtPatch` and `inputPatch` folders of the test set.
+
+### Pretrained checkpoint
+
+Download from [Google Drive](https://drive.google.com/drive/folders/1Y9wOSCVOTao2QoyyKu2lXw83bXVzr3Vk?usp=sharing) and point `checkpointPath` to it.
+
+### Training
+
 ```bash
-python main.py -tr
+python main.py -ts   # train from scratch
+python main.py -tr   # resume or fine-tune from checkpointPath
 ```
 
-Checkpoints and enhanced images are stored in `modelLog` folder during training.
+Checkpoints and enhanced images are written to `modelLog/`.
 
-⚠️ **Note:**  
-For transfer learning, ensure the training steps/epochs in your config exceed those of the pretrained checkpoint. Otherwise, update the code logic to avoid training from stopping early.
+> **Fine-tuning note:** the number of training steps/epochs in the config must exceed those stored in the checkpoint, otherwise training stops immediately.
 
----
+### Results
 
-## **Results**
-Sample results and visualizations will be uploaded after publication.
-### Quantitative Benchmark on LSD Dataset
+<p align="center"><img src="assets/lsd_results.png" width="95%" alt="Quantitative comparison on LSD"></p>
 
-<p align="center">
-  <img src="assets/lsd_results.png" width="95%">
-</p>
-*The best and second-best results are highlighted in red and blue respectively.*
----
+Best and second-best results are shown in red and blue.
 
-## **Citation**
-You can cite our paper as:
+## Citation
 
 ```bibtex
 @inproceedings{sharif2026illuminating,
   title={Illuminating Darkness: Learning to Enhance Low-light Images In-the-Wild},
   author={Sharif, SMA and Rehman, Abdur and Abidin, Zain Ul and Dharejo, Fayaz Ali and Timofte, Radu and Naqvi, Rizwan Ali},
-  booktitle={Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision},
+  booktitle={Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
   pages={2263--2272},
   year={2026}
 }
 ```
----
 
-## **License**
+## License
 
-### Code License
-The code in this repository is licensed under the **MIT License**. See [LICENSE](LICENSE) for details.
+- **Code:** MIT.
+- **Dataset (LSD and LSD-U):** [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/). Free for non-commercial research with attribution. For commercial use, contact us.
 
-### Dataset License
-The **Low-Light Smartphone Dataset (LSD)** is licensed under **Creative Commons Attribution 4.0 International (CC BY 4.0)**. See [DATA_LICENSE](DATA_LICENSE) for details.
+## About
 
-## **Notes from Author**
-This work is self-motivated research. We believe that research should be free and that everyone has the right to pursue it. Therefore, we have published all our code and the Low-Light Smartphone Dataset (LSD). Notably, it took over 2 years to collect all these real-world samples, driven by personal interest and dedication. You are welcome to use our code and dataset for your research and give suggestions to improve real-world LLIE. However, please note that the LSD dataset is intended for non-commercial research purposes only. If you use our work, please cite our paper.
+LSD took over two years to collect and is self-funded research. We release the data and code openly because we believe research should be accessible to everyone. If LSD or TFFormer helps your work, please cite the paper.
 
-## **Contact**
-For any further queries, feel free to contact us through the following emails: apuism@gmail.com, abdurehman458@gmail.com
+**Authors:** S M A Sharif¹, Abdur Rehman¹, Zain Ul Abidin², Fayaz Ali Dharejo³, Radu Timofte³, Rizwan Ali Naqvi²
+¹Opt-AI Inc. · ²Sejong University · ³University of Würzburg
 
-**Acknowledgment:** This code is based on the [BJDD](https://github.com/sharif-apu/BJDD_CVPR21) and  [RetinexFormer](https://github.com/caiyuanhao1998/Retinexformer) repository. 
+**Contact:** apuism@gmail.com · abdurehman458@gmail.com
+
+**Acknowledgment:** This code builds on [BJDD](https://github.com/sharif-apu/BJDD_CVPR21) and [Retinexformer](https://github.com/caiyuanhao1998/Retinexformer).
