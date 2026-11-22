@@ -5,13 +5,14 @@
 ### Illuminating Darkness: Learning to Enhance Low-light Images In-the-Wild
 **WACV 2026**
 
-[**Website**](https://lsd-website.apuism.workers.dev) · [**Paper**](https://arxiv.org/abs/2503.06898) · [**Dataset**](https://huggingface.co/datasets/ARM4588/Lowlight-Smartphone-Dataset) · [**Results**](#results) · [**Talk**](https://www.youtube.com/watch?v=3GQWxt8QlwE) · [**Poster**](assets/poster_wacv.pdf)
+[**Website**](https://lsd-website.apuism.workers.dev) · [**Paper**](https://arxiv.org/abs/2503.06898) · [**Dataset**](https://huggingface.co/datasets/ARM4588/Lowlight-Smartphone-Dataset) · [**Results**](#results) · [**Talk**](https://www.youtube.com/watch?v=3GQWxt8QlwE) · [**Poster**](assets/poster_wacv.pdf) · [**Support LSD**](#support-lsd)
 
 [![Website](https://img.shields.io/badge/Website-LSD-0b7285.svg)](https://lsd-website.apuism.workers.dev)
 [![arXiv](https://img.shields.io/badge/arXiv-2503.06898-b31b1b.svg)](https://arxiv.org/abs/2503.06898)
 [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Dataset-LSD-yellow.svg)](https://huggingface.co/datasets/ARM4588/Lowlight-Smartphone-Dataset)
 [![Data license](https://img.shields.io/badge/data-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 [![Code license](https://img.shields.io/badge/code-MIT-blue.svg)](#license)
+[![Sponsor](https://img.shields.io/badge/%E2%9D%A4-Sponsor-ea4aaa.svg)](https://github.com/sponsors/sharif-apu)
 
 <img src="assets/lsd_teaser.jpg" width="90%" alt="LSD pairs: low-light smartphone input next to its aligned ground truth, outdoor and indoor">
 
@@ -83,7 +84,7 @@ Submit your enhanced results and get scored on **hidden ground truth** with the 
 2. Save each result as PNG with the same name (`DLL_001.png` …) and zip them.
 3. Register and upload on the [Submit page](https://lsd-website.apuism.workers.dev/#submit). Scores: PSNR, SSIM and LPIPS.
 
-Approved entries appear on the [leaderboard](https://lsd-website.apuism.workers.dev/#leaderboard). For the paper's results on the public 400-pair test set, see [Results](#results).
+Approved entries appear on the [leaderboard](https://lsd-website.apuism.workers.dev/#leaderboard). For the results reported in the paper, see [Results](#results).
 
 ## TFFormer
 
@@ -139,7 +140,16 @@ TFFormer recovers cleaner text and texture and more faithful color than recent m
 
 <p align="center"><img src="assets/lsd_results.png" width="95%" alt="Quantitative comparison on LSD"></p>
 
-Quantitative results on the public LSD test set. Best and second-best results are shown in red and blue. A sortable version is on the [website leaderboard](https://lsd-website.apuism.workers.dev/#leaderboard) (choose *Paper · public 400*).
+Quantitative benchmark on the LSD dataset, as reported in the paper. The best and second-best results are highlighted in red and blue, respectively.
+
+## Support LSD
+
+LSD is **entirely self-funded**. Over two years of data collection, storage, hosting and the benchmark server have all been paid by the authors themselves. The data, code and benchmark stay free for research. If LSD is useful to you or your company, please help keep it running:
+
+- **Sponsor on GitHub.** Monthly or one-time, any amount: **[github.com/sponsors/sharif-apu](https://github.com/sponsors/sharif-apu)**.
+- **Commercial license.** The dataset is CC BY-NC 4.0. To use LSD or TFFormer in a product, email [apuism@gmail.com](mailto:apuism@gmail.com?subject=LSD%20commercial%20license).
+- **Sponsorship.** Fund benchmark compute, NTIRE 2027 prizes or the next LSD release. Sponsors are credited on the [website](https://lsd-website.apuism.workers.dev/#support) and have no influence on scoring or rankings. Email [apuism@gmail.com](mailto:apuism@gmail.com?subject=LSD%20sponsorship).
+- **Spread the word.** Cite the paper, ⭐ star this repository, and [submit your method to the benchmark](https://lsd-website.apuism.workers.dev/#submit).
 
 ## Citation
 
@@ -156,11 +166,11 @@ Quantitative results on the public LSD test set. Best and second-best results ar
 ## License
 
 - **Code:** MIT.
-- **Dataset (LSD and LSD-U):** [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/). Free for non-commercial research with attribution. For commercial use, contact us.
+- **Dataset (LSD and LSD-U):** [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/). Free for non-commercial research with attribution. For commercial use, see [Support LSD](#support-lsd).
 
 ## About
 
-LSD took over two years to collect and is self-funded research. We release the data and code openly because we believe research should be accessible to everyone. If LSD or TFFormer helps your work, please cite the paper.
+LSD took over two years to collect and is self-funded research. We release the data and code openly because we believe research should be accessible to everyone. If LSD or TFFormer helps your work, please cite the paper and consider [supporting LSD](#support-lsd).
 
 **Authors:** S M A Sharif¹, Abdur Rehman¹, Zain Ul Abidin², Fayaz Ali Dharejo³, Radu Timofte³, Rizwan Ali Naqvi²
 ¹Opt-AI Inc. · ²Sejong University · ³University of Würzburg
