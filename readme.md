@@ -172,7 +172,7 @@ LSD was built over two years with the authors' own resources, and we still pay f
 
 LSD was built over two years with the authors' own resources: data collection, storage, hosting and the benchmark server are paid for by the team. We gratefully acknowledge the Alexander von Humboldt Foundation for partial support of the WACV 2026 conference registration. We release the data and code openly because we believe research should be accessible to everyone. If LSD or TFFormer helps your work, please cite the paper and consider [supporting LSD](#support-lsd).
 
-**Authors:** S M A Sharif¹, Abdur Rehman¹, Zain Ul Abidin², Fayaz Ali Dharejo³, Radu Timofte³, Rizwan Ali Naqvi²
+**Authors:** S M A Sharif¹, Abdur Rehman¹, Zain Ul Abidin², Fayaz Ali Dharejo³, Radu Timofte³, Rizwan Ali Naqvi²<br>
 ¹Opt-AI Inc. · ²Sejong University · ³University of Würzburg
 
 **Contact:** apuism@gmail.com · abdurehman458@gmail.com
